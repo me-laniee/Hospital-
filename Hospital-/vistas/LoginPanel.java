@@ -27,10 +27,11 @@ public class LoginPanel {
         GridBagConstraints gbc = new GridBagConstraints();
         gbc.insets = new Insets(10,80, 10, 80);
         gbc.fill= GridBagConstraints.HORIZONTAL;
-        gbc.weightx= 1.0;
+        //gbc.weightx= 1.0;
 
         // titulo
         JLabel titulo = new JLabel("Login");
+        titulo.setPreferredSize(new Dimension(1000,50));
         gbc.gridx = 0;
         gbc.gridy = 0;
         gbc.gridwidth = 2;
@@ -39,7 +40,6 @@ public class LoginPanel {
 
         // entrada correo
         JTextField entradaCorreo =new JTextField();
-        entradaCorreo.setSize(new Dimension(100, 50));
         gbc.gridx = 1;
         gbc.gridy = 1;
         panelLogin.add(entradaCorreo, gbc);
@@ -54,8 +54,8 @@ public class LoginPanel {
 
         // boton
         JButton btnIngresar= new JButton("INGRESAR");
-        btnIngresar.setSize(new Dimension (100,100));
-        gbc.gridx = 3;
+        btnIngresar.setSize(new Dimension (50,50));
+        gbc.gridx = 1;
         gbc.gridy = 3;
         panelLogin.add(btnIngresar, gbc);
     }
