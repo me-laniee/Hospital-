@@ -1,2 +1,3 @@
 # Hospital-
-file:///home/melanie/Desktop/PROYECTO-HOSPITAL.png
+![Vista Previal](PROYECTO-HOSPITAL.png)
+
