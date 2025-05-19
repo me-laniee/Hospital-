@@ -11,6 +11,7 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 import javax.swing.JPasswordField;
 import javax.swing.JTextField;
+import javax.swing.SwingConstants;
 
 public class LoginPanel {
 
@@ -31,24 +32,29 @@ public class LoginPanel {
 
         // titulo
         JLabel titulo = new JLabel("Login");
-        titulo.setPreferredSize(new Dimension(1000,50));
+        titulo.setHorizontalAlignment(SwingConstants.CENTER);
+        titulo.setPreferredSize(new Dimension(300,50));
         gbc.gridx = 0;
         gbc.gridy = 0;
         gbc.gridwidth = 2;
         gbc.anchor = GridBagConstraints.CENTER;
+        gbc.fill= GridBagConstraints.NONE;
         panelLogin.add(titulo, gbc);
 
         // entrada correo
         JTextField entradaCorreo =new JTextField();
+        entradaCorreo.setPreferredSize(new Dimension(300,30));
         gbc.gridx = 1;
         gbc.gridy = 1;
+        gbc.fill =GridBagConstraints.NONE;
         panelLogin.add(entradaCorreo, gbc);
 
         // entrada contraseña
         JPasswordField entradContrasenna =  new JPasswordField();
-        entradContrasenna.setSize(new Dimension(100,50));
+        entradContrasenna.setPreferredSize(new Dimension(300,30));
         gbc.gridx = 1;
         gbc.gridy = 2;
+        gbc.fill =GridBagConstraints.NONE;
         panelLogin.add(entradContrasenna, gbc);
 
 
@@ -57,6 +63,8 @@ public class LoginPanel {
         btnIngresar.setSize(new Dimension (50,50));
         gbc.gridx = 1;
         gbc.gridy = 3;
+        gbc.anchor =GridBagConstraints.EAST;
+        gbc.fill = GridBagConstraints.NONE;
         panelLogin.add(btnIngresar, gbc);
     }
 
